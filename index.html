@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hitesh | Personal Profile</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e1b4b);
+            color: #e2e8f0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 850px;
+            background: rgba(15, 23, 42, 0.95);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            border-radius: 20px;
+            padding: 45px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+        }
+
+        .header {
+            text-align: center;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #334155;
+        }
+
+        .profile-icon {
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 38px;
+            font-weight: bold;
+            color: white;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+
+        .subtitle {
+            color: #a5b4fc;
+            font-size: 18px;
+        }
+
+        .section {
+            margin-top: 30px;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-bottom: 18px;
+            color: #c4b5fd;
+            border-left: 4px solid #8b5cf6;
+            padding-left: 12px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .info-card {
+            background: #1e293b;
+            padding: 18px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+        }
+
+        .label {
+            display: block;
+            font-size: 13px;
+            color: #94a3b8;
+            margin-bottom: 7px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .value {
+            font-size: 16px;
+            color: #f8fafc;
+            font-weight: bold;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            background: linear-gradient(135deg, #312e81, #4c1d95);
+            border: 1px solid #6366f1;
+            padding: 10px 16px;
+            border-radius: 25px;
+            font-size: 14px;
+        }
+
+        .objective {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #6366f1;
+            line-height: 1.7;
+            color: #cbd5e1;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 35px;
+            padding-top: 20px;
+            border-top: 1px solid #334155;
+            color: #64748b;
+            font-size: 13px;
+        }
+
+        .status {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 7px 14px;
+            border-radius: 20px;
+            background: #14532d;
+            color: #86efac;
+            font-size: 12px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+            <div class="profile-icon">H</div>
+
+            <h1>Hitesh</h1>
+
+            <div class="subtitle">
+                Integrated M.Tech - Software Engineering
+            </div>
+
+            <span class="status">Software Engineering Student</span>
+        </div>
+
+        <!-- Personal Information -->
+        <div class="section">
+            <h2>Personal Information</h2>
+
+            <div class="info-grid">
+
+                <div class="info-card">
+                    <span class="label">Register Number</span>
+                    <span class="value">24MIS0156</span>
+                </div>
+
+                <div class="info-card">
+                    <span class="label">Department</span>
+                    <span class="value">SCORE</span>
+                </div>
+
+                <div class="info-card">
+                    <span class="label">Program</span>
+                    <span class="value">Integrated M.Tech - Software Engineering</span>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="section">
+            <h2>Technical Skills</h2>
+
+            <div class="skills">
+                <span class="skill">C++</span>
+                <span class="skill">Data Structures & Algorithms</span>
+                <span class="skill">Backend Development</span>
+                <span class="skill">Python</span>
+                <span class="skill">Docker</span>
+                <span class="skill">Kubernetes</span>
+                <span class="skill">Git & GitHub</span>
+            </div>
+        </div>
+
+        <!-- Career Objective -->
+        <div class="section">
+            <h2>Career Objective</h2>
+
+            <div class="objective">
+                To become a skilled software engineer by developing strong
+                problem-solving and programming skills and building reliable,
+                scalable, and efficient software applications.
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            Personal Profile Web Application
+            <br>
+            Deployed using Jenkins + Docker + Kubernetes
+        </div>
+
+    </div>
+
+</body>
+</html>
